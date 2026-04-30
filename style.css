@@ -1,0 +1,90 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    background: white;
+    width: 350px;
+    margin: 60px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Button */
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+/* Cards */
+.card {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Result text */
+.result-text {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Back button */
+.back-btn {
+    text-decoration: none;
+    color: white;
+    background: #333;
+    padding: 8px 15px;
+    border-radius: 8px;
+}
+
+/* -----------------------------
+   Dynamic Risk Colors
+----------------------------- */
+
+/* Low Risk - Green */
+.low-risk {
+    background: linear-gradient(to right, #a8e063, #56ab2f);
+}
+
+/* Prediabetic - Yellow */
+.prediabetic {
+    background: linear-gradient(to right, #fddb92, #d1fdff);
+}
+
+/* High Risk - Red */
+.high-risk {
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+}

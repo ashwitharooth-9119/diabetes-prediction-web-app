@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body class="{{ stage|lower|replace(' ', '-') }}">
+
+<div class="container">
+    <h1>🩺 Diabetes Prediction Result</h1>
+
+    <p class="result-text"><b>Risk Probability:</b> {{ probability }}</p>
+    <p class="result-text"><b>Stage:</b> {{ stage }}</p>
+
+    <div class="card">
+        <h3>🥗 Diet Plan</h3>
+        <p>{{ diet }}</p>
+    </div>
+
+    <div class="card">
+        <h3>🏃 Exercise Plan</h3>
+        <p>{{ exercise }}</p>
+    </div>
+
+    <br>
+    <a href="/" class="back-btn">⬅ Go Back</a>
+</div>
+
+</body>
+</html>
